@@ -8,6 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="13.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
@@ -17,14 +28,21 @@
     <Folder Include="Application\Common\Exceptions\" />
     <Folder Include="Application\Common\Mappings\" />
     <Folder Include="Application\Common\Helpers\" />
-    <Folder Include="Application\Features\" />
-    <Folder Include="Domain\Entities\" />
+    <Folder Include="Application\Features\Auth\Creds\Commands\FogetPassword\" />
+    <Folder Include="Application\Features\Auth\Creds\Commands\SetupPassword\" />
+    <Folder Include="Application\Features\Auth\Creds\Models\" />
+    <Folder Include="Application\Features\Auth\Creds\Controllers\" />
+    <Folder Include="Application\Features\Auth\Creds\Queries\GetByEmail\" />
+    <Folder Include="Application\Features\Auth\Role\Commands\" />
+    <Folder Include="Application\Features\Auth\Role\Controllers\" />
+    <Folder Include="Application\Features\Auth\Role\Models\" />
+    <Folder Include="Application\Features\Auth\Role\Queries\" />
+    <Folder Include="Application\Features\Auth\UserDetails\Queries\" />
     <Folder Include="Domain\Enums\" />
     <Folder Include="Domain\Events\" />
     <Folder Include="Domain\ValueObjects\" />
     <Folder Include="Infrastructure\Services\" />
     <Folder Include="Infrastructure\Repositories\" />
-    <Folder Include="Infrastructure\Persistence\" />
     <Folder Include="Tests\IntegrationTests\" />
     <Folder Include="Tests\UnitTests\" />
     <Folder Include="WebApi\Middleware\" />
